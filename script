@@ -1,7 +1,7 @@
 1. Create Admin/Sudo User ("Support"):
 
-$ sudo adduser Support
-$ sudo usermod -aG sudo Support
+$ sudo adduser SafeIT
+$ sudo usermod -aG sudo SafeIT
 
 2. Create Limited Access User ("Medarbejder"):
 
