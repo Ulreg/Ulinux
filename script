@@ -1,7 +1,7 @@
-1. Create Admin/Sudo User ("SafeIT"):
+1. Create Admin/Sudo User ("Safeit"):
 
-sudo adduser SafeIT
-sudo usermod -aG sudo SafeIT
+sudo adduser Safeit
+sudo usermod -aG sudo Safeit
 
 2. Create Limited Access User ("Medarbejder"):
 
