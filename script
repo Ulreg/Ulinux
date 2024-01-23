@@ -1,0 +1,22 @@
+1. Create Admin/Sudo User ("SafeIT"):
+
+sudo adduser SafeIT
+sudo usermod -aG sudo SafeIT
+
+2. Create Limited Access User ("Medarbejder"):
+
+sudo adduser Medarbejder
+
+3. Restrict Access for "Medarbejder":
+
+sudo visudo
+#Add the following line at the end of the file:
+Medarbejder ALL=(ALL) /usr/bin/firefox
+
+4. Disable Terminal Access for "Medarbejder":
+
+sudo chsh -s /usr/sbin/nologin Medarbejder
+
+5. Desktop Shortcut to office.com:
+
+echo -e "[Desktop Entry]\nName=Office\nExec=firefox https://office.com\nType=Application" | tee /home/Medarbejder/Desktop/office.desktop
